@@ -188,7 +188,6 @@ const deleteProduct = async ( request: Request, response: any ) => {
   try {
 
     const deleteCount = await products.deleteOne({ _id: idProduct });
-    console.log(deleteCount);
 
     if ( deleteCount > 0 ) {
 
